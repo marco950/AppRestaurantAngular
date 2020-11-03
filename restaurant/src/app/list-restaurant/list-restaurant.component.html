@@ -1,0 +1,21 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Addres</th>
+      <th scope="col">Email</th>
+      <th scope="col">Operation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor= "let item of collection" >
+        <th>{{ item.id }}</th>
+        <th>{{ item.name }}</th>
+        <th>{{ item.address }}</th>
+        <th>{{ item.email }}</th>
+        <th><i (click)="deleteRestaurant(item.id)" class="fa fa-trash" style="font-size:20px;color:red;"></i></th>
+    </tr>
+  </tbody>
+</table>
+
