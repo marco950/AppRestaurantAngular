@@ -17,7 +17,7 @@ const routes: Routes = [
   },
   {
     component: UpdateRestaurantComponent,
-    path: 'update'
+    path: 'update/:id'
   },
   {
     component: LoginComponent,

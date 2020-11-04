@@ -17,8 +17,7 @@ export class ListRestaurantComponent implements OnInit {
     });
   }
   deleteRestaurant(item) {
-    //this.collection.splice(item - 1 , 1  )
-    console.log(item - 1 );
+    this.collection.splice(item - 1 , 1  );
     this.restaurant.deleteRestaurant(item).subscribe((result) => {
       console.warn(result);
     });

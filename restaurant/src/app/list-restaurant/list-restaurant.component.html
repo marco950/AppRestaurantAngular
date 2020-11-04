@@ -9,13 +9,19 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor= "let item of collection" >
-        <th>{{ item.id }}</th>
-        <th>{{ item.name }}</th>
-        <th>{{ item.address }}</th>
-        <th>{{ item.email }}</th>
-        <th><i (click)="deleteRestaurant(item.id)" class="fa fa-trash" style="font-size:20px;color:red;"></i></th>
+    <tr *ngFor="let item of collection">
+      <th>{{ item.id }}</th>
+      <th>{{ item.name }}</th>
+      <th>{{ item.address }}</th>
+      <th>{{ item.email }}</th>
+      <th>
+        <i (click)="deleteRestaurant(item.id)" class="fa fa-trash" style="font-size:20px;color:red;"></i>
+        <a routerLink="/update/{{item.id}}">
+          <i  class="fa fa-edit" style="font-size:20px;color:blue;">
+          </i>
+        </a>
+      </th>
+
     </tr>
   </tbody>
 </table>
-
