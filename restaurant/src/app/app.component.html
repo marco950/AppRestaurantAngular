@@ -1,19 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Restourants</a>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" routerLink="">Restourants</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link" routerLink='add'>Add Restaurant</a>
-      <a class="nav-item nav-link" routerLink='update'>Update Restaurant</a>
-      <a class="nav-item nav-link" routerLink='list'>List Restaurant</a>
-      <a class="nav-item nav-link" routerLink='login'>Login User</a>
-      <a class="nav-item nav-link" routerLink='register'>Register User</a>
+      <a class="nav-item nav-link" routerLink=''>List Restaurant</a>
+      <a class="nav-item nav-link" routerLink='login'>Login </a>
+      <a class="nav-item nav-link" routerLink='register'>Register </a>
     </div>
   </div>
 </nav>
-
 <div class="container">
+  <footer>
+    <p> Register your Restaurant with us </p>
+  </footer>
   <router-outlet></router-outlet>
 </div>
+

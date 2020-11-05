@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { ListRestaurantComponent } from './list-restaurant/list-restaurant.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
